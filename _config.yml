@@ -1,6 +1,6 @@
 title: ธรรมสุตตะ
-description: ศึกษาธรรมตามพระไตรปิฎก
-baseurl: ""
+description: รวมพระไตรปิฎก วินัยปิฎก สุตตันตปิฎก อภิธรรมปิฎก และสาระธรรมต่าง ๆ
+baseurl: "" # อย่าใส่ /tripidok หรือ path ใด ๆ
 url: "https://dhamma-sutta.com"
 
 remote_theme: mmistakes/minimal-mistakes
@@ -11,6 +11,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
+# การตั้งค่าระดับ global สำหรับโพสต์
 defaults:
   - scope:
       path: ""
@@ -20,5 +21,28 @@ defaults:
       author_profile: true
       read_time: true
       comments: false
-      share: false
+      share: true
       related: true
+
+# เมนูหลักด้านบน (เพิ่มได้ตามต้องการ)
+# ตัวอย่าง:
+# navigation:
+#   - title: "หน้าแรก"
+#     url: "/"
+#   - title: "พระสูตร"
+#     url: /sutta/
+#   - title: "เกี่ยวกับ"
+#     url: /about/
+
+# Social (จะขึ้นที่ด้านล่างหรือ author_profile)
+author:
+  name   : ธรรมสุตตะ
+  avatar : "/assets/images/avatar.png"
+  bio    : "รวมคำสอนพระพุทธเจ้าในรูปแบบเว็บไซต์อ่านง่าย"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dhamsutta"
+    - label: "เว็บไซต์หลัก"
+      icon: "fas fa-fw fa-link"
+      url: "https://dhamma-sutta.com"
