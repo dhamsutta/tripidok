@@ -1,0 +1,22 @@
+title: ธรรมสุตตะ
+description: รวมพระไตรปิฎกและพระสูตรในรูปแบบอ่านง่าย
+baseurl: "" 
+url: "https://dhamsutta.github.io"
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
