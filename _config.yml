@@ -25,14 +25,15 @@ defaults:
       related: true
 
 # เมนูหลักด้านบน (เพิ่มได้ตามต้องการ)
-# ตัวอย่าง:
-# navigation:
-#   - title: "หน้าแรก"
-#     url: "/"
-#   - title: "พระสูตร"
-#     url: /sutta/
-#   - title: "เกี่ยวกับ"
-#     url: /about/
+navigation:
+  - title: "หน้าแรก"
+    url: "/"
+  - title: "โพสต์"
+    url: /posts/
+  - title: "หมวดหมู่"
+    url: /categories/
+  - title: "แท็ก"
+    url: /tags/
 
 # Social (จะขึ้นที่ด้านล่างหรือ author_profile)
 author:
