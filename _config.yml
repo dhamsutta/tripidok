@@ -1,7 +1,7 @@
 title: ธรรมสุตตะ
 description: รวมพระไตรปิฎกและพระสูตรในรูปแบบอ่านง่าย
 baseurl: "" 
-url: "https://dhamsutta.github.io"
+url: "https://dhamma-sutta.com"
 theme: minimal-mistakes-jekyll
 
 plugins:
