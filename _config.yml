@@ -47,3 +47,5 @@ author:
     - label: "เว็บไซต์หลัก"
       icon: "fas fa-fw fa-link"
       url: "https://dhamma-sutta.com"
+
+related: true
