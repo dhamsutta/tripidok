@@ -1,5 +1,12 @@
 ---
-layout: default
+layout: home
+title: ธรรมสุตตะ
+permalink: /
+entries_heading: "โพสต์ล่าสุด"
+header:
+  overlay_image: /assets/images/hero.jpg
+  overlay_filter: 0.3
+  overlay_color: "#000"
 ---
 
 {% include masthead.html %}
