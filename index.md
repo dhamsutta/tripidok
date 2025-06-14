@@ -9,4 +9,13 @@ header:
   overlay_image: /assets/images/hero.jpg
 ---
 
+<div id="buddha-quote" style="text-align:center; font-style: italic; font-size: 1.1em; margin-bottom: 1em;"></div>
+
+
+
+
+
+
+
 > เว็บไซต์รวมพระไตรปิฎก พร้อมอ่านในรูปแบบ Markdown อย่างเป็นระเบียบ
+
