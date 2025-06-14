@@ -36,17 +36,14 @@ navigation:
   - title: "หมวดหมู่"
     children:
       - title: "พระวินัย"
-        url: /categories/พระวินัย/
+        url: /vinaya/
       - title: "พระสูตร"
-        url: /categories/พระสูตร/
+        url: /sutta/
       - title: "พระอภิธรรม"
-        url: /categories/พระอภิธรรม/
-      - title: "ทั้งหมด"
-        url: /categories/
+        url: /abhidhamma/
 
   - title: "ธรรมบรรยาย"
     url: /radio/
 
   - title: "อภิธานศัพท์"
     url: /dic/
-
