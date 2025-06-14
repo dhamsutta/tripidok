@@ -1,0 +1,11 @@
+main:
+  - title: "หน้าแรก"
+    url: /
+  - title: "โพสต์"
+    url: /posts/
+  - title: "หมวดหมู่"
+    url: /categories/
+  - title: "แท็ก"
+    url: /tags/
+  - title: "ธรรมบรรยาย"
+    url: /about/
