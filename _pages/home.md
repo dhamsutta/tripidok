@@ -1,12 +1,12 @@
 ---
-title: "หน้าแรก"
-layout: splash
+layout: home
+title: "ธรรมสุตตะ"
 permalink: /
+excerpt: "รวมพระไตรปิฎก วินัยปิฎก สุตตันตปิฎก อภิธรรมปิฎก และสาระธรรมต่าง ๆ"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.3"
+  overlay_image: /assets/images/hero.jpg
 ---
 
-header_pages:
-  - _pages/home.md
-
-
-
-ยินดีต้อนรับสู่เว็บไซต์ธรรมสุตตะ
+> เว็บไซต์รวมพระไตรปิฎก พร้อมอ่านในรูปแบบ Markdown อย่างเป็นระเบียบ
