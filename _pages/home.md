@@ -11,29 +11,30 @@ permalink: /
 
 <section style="text-align: center; padding: 2rem;">
   <div id="buddha-quote" style="color: #1B5E20; font-weight: bold;"></div>
-</section>
-
-<section style="text-align: center; padding: 2rem;">
-  <div id="buddha-quote" style="color: #1B5E20; font-weight: bold;"></div>
+  <button onclick="showQuote()" style="margin-top: 1rem;">สุ่มใหม่</button>
 </section>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  fetch("{{ '/assets/data/quotes.json' | relative_url }}")
-    .then(response => {
-      if (!response.ok) throw new Error("Network error");
-      return response.json();
-    })
-    .then(data => {
-      if (!Array.isArray(data) || data.length === 0) return;
+let quotes = [];
 
-      const random = Math.floor(Math.random() * data.length);
-      const quote = data[random];
-      const quoteHtml = `"${quote.quote}"<br><br>— <i>${quote.source}</i>`;
-      document.getElementById("buddha-quote").innerHTML = quoteHtml;
+function showQuote() {
+  if (quotes.length === 0) return;
+
+  const random = Math.floor(Math.random() * quotes.length);
+  const quote = quotes[random];
+  const html = `"${quote.quote}"<br><br>— <i>${quote.source}</i>`;
+  document.getElementById("buddha-quote").innerHTML = html;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("{{ '/assets/data/quotes.json' | relative_url }}")
+    .then((response) => response.json())
+    .then((data) => {
+      quotes = data;
+      showQuote(); // แสดงพุทธพจน์ตอนโหลดครั้งแรก
     })
-    .catch(err => {
-      console.error("Quote load failed:", err);
+    .catch((err) => {
+      console.error("โหลดพุทธพจน์ล้มเหลว:", err);
       document.getElementById("buddha-quote").innerText = "ไม่สามารถโหลดพุทธพจน์ได้";
     });
 });
