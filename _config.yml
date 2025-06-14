@@ -12,6 +12,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
+header_pages:
+  - index.md
+
 # การตั้งค่าระดับ global สำหรับโพสต์
 defaults:
   - scope:
@@ -47,5 +50,3 @@ navigation:
   - title: "อภิธานศัพท์"
     url: /dic/
 
-header_pages:
-  - index.md
