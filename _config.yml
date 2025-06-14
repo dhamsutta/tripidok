@@ -47,3 +47,8 @@ navigation:
 
   - title: "อภิธานศัพท์"
     url: /dic/
+
+header_pages:
+  - _pages/vinaya.md
+  - _pages/sutta.md
+  - _pages/abhidhamma.md
