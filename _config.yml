@@ -1,16 +1,21 @@
-title: "ธรรมสุตตะ"
+title: ""
 logo: "/assets/images/logo25.gif"
-description: ศึกษาพระธรรมตามพระไตรปิฎก
-baseurl: ""
+description: รวมพระไตรปิฎก วินัยปิฎก สุตตันตปิฎก อภิธรรมปิฎก และสาระธรรมต่าง ๆ
+baseurl: "" # อย่าใส่ /tripidok หรือ path ใด ๆ
 url: "https://dhamma-sutta.com"
 
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: mmistakes/minimal-mistakes
 
-collections:
-  pages:
-    output: true
-    permalink: /:name/
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
 
+header_pages:
+  - index.md
+
+# การตั้งค่าระดับ global สำหรับโพสต์
 defaults:
   - scope:
       path: ""
@@ -21,21 +26,9 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: false
+      related: true
 
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      include: custom
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-include-cache
-
+# เมนูหลักด้านบน (เพิ่มได้ตามต้องการ)
 navigation:
   - title: "หน้าแรก"
     url: /
@@ -47,9 +40,7 @@ navigation:
       - title: "พระสูตร"
         url: /sutta/
       - title: "พระอภิธรรม"
-        url: /abidhamma/
-      - title: "ทั้งหมด"
-        url: /categories/
+        url: /abhidhamma/
 
   - title: "ธรรมบรรยาย"
     url: /radio/
@@ -57,18 +48,7 @@ navigation:
   - title: "อภิธานศัพท์"
     url: /dic/
 
-author:
-  name   : ธรรมสุตตะ
-  avatar : "/assets/images/logo_no_bg.png"
-  bio    : "ศึกษาพระธรรมตามพระไตรปิฏก"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dhamsutta"
-    - label: "เว็บไซต์หลัก"
-      icon: "fas fa-fw fa-link"
-      url: "https://dhamma-sutta.com"
-
-minimal_mistakes_skin: default
-permalink: /:categories/:title/
-
+header_pages:
+  - _pages/vinaya.md
+  - _pages/sutta.md
+  - _pages/abhidhamma.md
