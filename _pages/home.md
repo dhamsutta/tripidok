@@ -11,7 +11,7 @@ permalink: /
 
 <section style="text-align: center; padding: 2rem;">
   <div id="buddha-quote" style="color: #1B5E20; font-weight: bold;"></div>
-  <button onclick="showQuote()" style="margin-top: 1rem;">สุ่มใหม่</button>
+  <button onclick="showQuote()" style="margin-top: 1rem;">เปลี่ยนพุทธพจน์</button>
 </section>
 
 <script>
