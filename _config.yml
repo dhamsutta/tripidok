@@ -49,3 +49,8 @@ author:
       url: "https://dhamma-sutta.com"
 
 related: true
+
+# เปิดใช้ sidebar
+minimal_mistakes_skin: default
+sidebar:
+  nav: "main"
