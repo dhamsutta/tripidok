@@ -3,15 +3,6 @@ layout: home
 title: "ธรรมสุตตะ"
 ---
 
-<div id="buddha-quote" style="text-align:center; font-style: italic; font-size: 1.1em; margin-bottom: 1em;"></div>
-
-
-
----
-layout: home
-title: "ธรรมสุตตะ"
----
-
 <!-- พื้นที่ด้านบนพื้นสีดำ -->
 <div style="background-color: #000; color: #fff; padding: 2em 1em; position: relative; text-align: center;">
 
