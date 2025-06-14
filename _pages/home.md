@@ -2,7 +2,7 @@
 layout: home
 title: "ธรรมสุตตะ"
 permalink: /
-excerpt: "รวมพระไตรปิฎก วินัยปิฎก สุตตันตปิฎก อภิธรรมปิฎก และสาระธรรมต่าง ๆ"
+excerpt: "ศึกษาพระธรรมตามพระไตรปิฎก"
 header:
   overlay_color: "#000"
   overlay_filter: "0.3"
