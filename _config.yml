@@ -39,8 +39,8 @@ navigation:
 # Social (จะขึ้นที่ด้านล่างหรือ author_profile)
 author:
   name   : ธรรมสุตตะ
-  avatar : "/assets/images/avatar.png"
-  bio    : "รวมคำสอนพระพุทธเจ้าในรูปแบบเว็บไซต์อ่านง่าย"
+  avatar : "/assets/images/logo_no_bg.png"
+  bio    : "ศึกษาพระธรรมตามพระไตรปิฏก"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
