@@ -18,9 +18,9 @@ fetch("/assets/data/quotes.json")
     function showQuote() {
       const random = data[Math.floor(Math.random() * data.length)];
       document.getElementById("buddha-quote").innerHTML =
-        `“${random.quote}”<br><small>${random.source}</small>`;
+        `“${random.quote}”<br><small style="font-size: 0.8em; color: #555;">${random.source}</small>`;
     }
     showQuote();
-    setInterval(showQuote, 10000);
+    setInterval(showQuote, 10000); // แรนด้อมใหม่ทุก 10 วินาที
   });
 </script>
