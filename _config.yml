@@ -21,9 +21,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false
+      comments: true
       share: true
-      related: true
+      related: false
 
 # เมนูหลักด้านบน (เพิ่มได้ตามต้องการ)
 navigation:
