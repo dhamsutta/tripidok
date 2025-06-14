@@ -1,7 +1,10 @@
-fetch('/assets/json/buddha-quotes.json')
-  .then(response => response.json())
-  .then(data => {
-    const quote = data[Math.floor(Math.random() * data.length)];
-    document.getElementById('buddha-quote').innerText = quote;
-  });
-
+[
+  {
+    "quote": "สพฺพปาปสฺส อกรณํ – การไม่ทำบาปทั้งปวง",
+    "source": "ธัมมปท คาถา 183"
+  },
+  {
+    "quote": "กุสลสฺสูปสมฺปทา – การทำกุศลให้ถึงพร้อม",
+    "source": "ธัมมปท คาถา 183"
+  }
+]
