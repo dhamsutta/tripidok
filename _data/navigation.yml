@@ -3,8 +3,6 @@ main:
     url: /
   - title: "หมวดหมู่"
     url: /categories/
-  - title: "แท็ก"
-    url: /tags/
   - title: "ธรรมบรรยาย"
     url: /radio/
   - title: "อภิธานศัพท์"
