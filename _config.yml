@@ -28,13 +28,24 @@ defaults:
 # เมนูหลักด้านบน (เพิ่มได้ตามต้องการ)
 navigation:
   - title: "หน้าแรก"
-    url: "/"
-  - title: "โพสต์"
-    url: /posts/
+    url: /
+
   - title: "หมวดหมู่"
-    url: /categories/
-  - title: "แท็ก"
-    url: /tags/
+    children:
+      - title: "พระวินัย"
+        url: /categories/พระวินัย/
+      - title: "พระสูตร"
+        url: /categories/พระสูตร/
+      - title: "พระอภิธรรม"
+        url: /categories/พระอภิธรรม/
+      - title: "ทั้งหมด"
+        url: /categories/
+
+  - title: "ธรรมบรรยาย"
+    url: /radio/
+
+  - title: "อภิธานศัพท์"
+    url: /dic/
 
 # Social (จะขึ้นที่ด้านล่างหรือ author_profile)
 author:
