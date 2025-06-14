@@ -75,3 +75,6 @@ sass:
 
 include:
   - assets/css/custom.css
+
+footer:
+  links: [] # ล้างลิงก์ทั้งหมด
