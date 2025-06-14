@@ -13,11 +13,28 @@ permalink: /
   <div id="buddha-quote" style="color: #1B5E20; font-weight: bold;"></div>
 </section>
 
+<section style="text-align: center; padding: 2rem;">
+  <div id="buddha-quote" style="color: #1B5E20; font-weight: bold;"></div>
+</section>
+
 <script>
-fetch("/assets/data/quotes.json")
-  .then(res => res.json())
-  .then(data => {
-    const quote = data[Math.floor(Math.random() * data.length)];
-    document.getElementById("buddha-quote").innerHTML = `"${quote.quote}"<br><br>— <i>${quote.source}</i>`;
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("{{ '/assets/data/quotes.json' | relative_url }}")
+    .then(response => {
+      if (!response.ok) throw new Error("Network error");
+      return response.json();
+    })
+    .then(data => {
+      if (!Array.isArray(data) || data.length === 0) return;
+
+      const random = Math.floor(Math.random() * data.length);
+      const quote = data[random];
+      const quoteHtml = `"${quote.quote}"<br><br>— <i>${quote.source}</i>`;
+      document.getElementById("buddha-quote").innerHTML = quoteHtml;
+    })
+    .catch(err => {
+      console.error("Quote load failed:", err);
+      document.getElementById("buddha-quote").innerText = "ไม่สามารถโหลดพุทธพจน์ได้";
+    });
+});
 </script>
