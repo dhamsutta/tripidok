@@ -69,3 +69,9 @@ author:
 
 minimal_mistakes_skin: default
 permalink: /:categories/:title/
+
+sass:
+  style: compressed
+
+include:
+  - assets/css/custom.css
