@@ -8,7 +8,9 @@ header:
   overlay_image: /assets/images/hero.jpg
 ---
 <!-- พุทธพจน์แบบสุ่ม -->
-> <div id="buddha-quote" style="text-align: center; font-style: italic; padding: 1em; color: #fff;"></div>
+> <div id="buddha-quote" style="text-align: center; font-style: italic; padding: 1em; color: #2e7d32;">
+  พุทธพจน์...
+</div>
 
 
 <div id="buddha-quote" style="text-align: center; font-style: italic; padding: 1em; color: #fff;"></div>
