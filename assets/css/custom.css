@@ -1,0 +1,4 @@
+/* ซ่อน Recent Posts ที่หน้าแรก */
+.home h2.archive__subtitle {
+  display: none;
+}
