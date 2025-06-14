@@ -8,6 +8,7 @@ header:
   overlay_image: /assets/images/hero.jpg
 ---
 <!-- พุทธพจน์แบบสุ่ม -->
-  <div id="buddha-quote" style="font-size: 1.2em; font-style: italic; padding: 0 2em;"></div>
+> <div id="buddha-quote" style="text-align: center; font-style: italic; padding: 1em; color: #fff;"></div>
 
-> เว็บไซต์รวมพระไตรปิฎก พร้อมอ่านในรูปแบบ Markdown อย่างเป็นระเบียบ
+
+<div id="buddha-quote" style="text-align: center; font-style: italic; padding: 1em; color: #fff;"></div>
