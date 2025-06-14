@@ -46,3 +46,6 @@ navigation:
 
   - title: "อภิธานศัพท์"
     url: /dic/
+
+header_pages:
+  - index.md
