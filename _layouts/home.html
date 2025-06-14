@@ -6,10 +6,6 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-<div class="page__content" style="margin-top: 2rem;">
-  <h2 class="archive__subtitle">
-    {{ page.entries_heading | default: "โพสต์ล่าสุด" }}
-  </h2>
+<h2>{{ page.entries_heading | default: "โพสต์ล่าสุด" }}</h2>
 
-  {% include archive.html %}
-</div>
+{% include archive-single.html %}
