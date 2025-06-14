@@ -1,12 +1,5 @@
 ---
-layout: home
-title: ธรรมสุตตะ
-permalink: /
-entries_heading: "โพสต์ล่าสุด"
-header:
-  overlay_image: /assets/images/hero.jpg
-  overlay_filter: 0.3
-  overlay_color: "#000"
+layout: default
 ---
 
 {% include masthead.html %}
@@ -50,6 +43,11 @@ header:
     {% for post in site.posts limit:5 %}
     <li>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>st.url | relative_url }}">{{ post.title }}</a></h3>
       <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
     </li>
     {% endfor %}
