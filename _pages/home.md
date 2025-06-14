@@ -1,12 +1,12 @@
 ---
-layout: home
+layout: default
 title: "ธรรมสุตตะ"
 permalink: /
-excerpt: "รวมพระไตรปิฎก วินัยปิฎก สุตตันตปิฎก อภิธรรมปิฎก และสาระธรรมต่าง ๆ"
+excerpt: "ศึกษาพระธรรมตามพระไตรปิฎก"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.3"
   overlay_image: /assets/images/hero.jpg
+  overlay_filter: "0.3"
+  overlay_color: "#000"
 ---
 
 <div id="buddha-quote" style="padding: 1rem; color: #1B5E20; font-weight: bold; text-align: center;"></div>
@@ -15,12 +15,9 @@ header:
 fetch("/assets/data/quotes.json")
   .then(response => response.json())
   .then(data => {
-    function showQuote() {
-      const random = data[Math.floor(Math.random() * data.length)];
-      document.getElementById("buddha-quote").innerHTML =
-        `${random.quote}<br><small>${random.source}</small>`;
-    }
-    showQuote();
-    setInterval(showQuote, 10000);
+    const random = Math.floor(Math.random() * data.length);
+    const quote = data[random];
+    const html = `"${quote.quote}"<br><br>— <i>${quote.source}</i>`;
+    document.getElementById("buddha-quote").innerHTML = html;
   });
 </script>
