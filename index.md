@@ -1,6 +1,6 @@
 ---
 layout: home
-title: ""
+title: "ธรรมสุตตะ"
 excerpt: "ศึกษาพระธรรมตามพระไตรปิฎก"
 header:
   overlay_color: "#000"
