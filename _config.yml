@@ -46,23 +46,3 @@ navigation:
 
   - title: "อภิธานศัพท์"
     url: /dic/
-
-# Social (จะขึ้นที่ด้านล่างหรือ author_profile)
-author:
-  name   : ธรรมสุตตะ
-  avatar : "/assets/images/logo_no_bg.png"
-  bio    : "ศึกษาพระธรรมตามพระไตรปิฏก"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dhamsutta"
-    - label: "เว็บไซต์หลัก"
-      icon: "fas fa-fw fa-link"
-      url: "https://dhamma-sutta.com"
-
-related: true
-
-# เปิดใช้ sidebar
-minimal_mistakes_skin: default
-sidebar:
-  nav: "main"
