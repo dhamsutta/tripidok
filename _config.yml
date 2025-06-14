@@ -26,7 +26,7 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: false
+      related: true
 
 # เมนูหลักด้านบน (เพิ่มได้ตามต้องการ)
 navigation:
