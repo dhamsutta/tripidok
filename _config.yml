@@ -22,11 +22,13 @@ defaults:
       comments: true
       share: true
       related: false
+
   - scope:
       path: ""
       type: pages
     values:
       layout: single
+      include: custom
 
 plugins:
   - jekyll-remote-theme
@@ -69,3 +71,4 @@ author:
 
 minimal_mistakes_skin: default
 permalink: /:categories/:title/
+
