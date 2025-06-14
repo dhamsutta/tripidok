@@ -2,7 +2,8 @@
 layout: home
 title: "ธรรมสุตตะ"
 permalink: /
-excerpt: "ศึกษาพระธรรมตามพระไตรปิฏก"
+excerpt: "ศึกษาพระธรรมตามพระไตรปิฎก"
+entries_heading: "โพสต์ล่าสุด"
 header:
   overlay_color: "#000"
   overlay_filter: "0.3"
