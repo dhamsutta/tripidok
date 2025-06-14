@@ -1,0 +1,20 @@
+{% assign posts = site.posts | where_exp: "post", "post.hidden != true" %}
+{% if posts.size > 0 %}
+  <div class="list__wrapper">
+    {% for post in posts limit: 5 %}
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h3 class="archive__item-title no_toc" itemprop="headline">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+        </h3>
+        <p class="page__meta">
+          {% if post.read_time %}<i class="far fa-clock" aria-hidden="true"></i> {{ post.read_time }} นาที<br>{% endif %}
+        </p>
+        {% if post.excerpt %}
+          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncatewords: 30 }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>ยังไม่มีบทความล่าสุด</p>
+{% endif %}
