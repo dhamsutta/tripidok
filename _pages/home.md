@@ -9,4 +9,18 @@ header:
   overlay_image: /assets/images/hero.jpg
 ---
 
-> เว็บไซต์รวมพระไตรปิฎก พร้อมอ่านในรูปแบบ Markdown อย่างเป็นระเบียบ
+> <div id="buddha-quote" style="padding: 1rem; color: #1B5E20; font-weight: bold; text-align: center;"></div>
+
+<script>
+fetch("/assets/data/quotes.json")
+  .then(response => response.json())
+  .then(data => {
+    function showQuote() {
+      const random = data[Math.floor(Math.random() * data.length)];
+      document.getElementById("buddha-quote").innerHTML =
+        `“${random.quote}”<br><small>${random.source}</small>`;
+    }
+    showQuote();
+    setInterval(showQuote, 10000);
+  });
+</script>
